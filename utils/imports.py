@@ -17,20 +17,23 @@ from scipy import stats
 import statsmodels.api as sm
 from statsmodels.tsa.api import Holt
 
-# sci-kit-learn modules
+# sklearn optimizer for intel chip
 from sklearnex import patch_sklearn
-patch_sklearn()
 # $ conda install scikit-learn-intelex
 # $ python -m sklearnex my_application.py
+patch_sklearn()
+
+# sci-kit-learn modules
+from sklearn import metrics 
+	# (
+	# confusion_matrix,accuracy_score,precision_score,recall_score,
+	# classification_report,mean_squared_error,r2_score,explained_variance_score
+	# )
 from sklearn.cluster import KMeans
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import SelectKBest, RFE, f_regression
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression, LinearRegression, LassoLars, TweedieRegressor
-from sklearn.metrics import (
-	confusion_matrix,accuracy_score,precision_score,recall_score,
-	classification_report,mean_squared_error,r2_score,explained_variance_score
-	)
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, RobustScaler, QuantileTransformer, PolynomialFeatures
