@@ -29,7 +29,7 @@ from sklearn import metrics
 	# confusion_matrix,accuracy_score,precision_score,recall_score,
 	# classification_report,mean_squared_error,r2_score,explained_variance_score
 	# )
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, DBSCAN
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import SelectKBest, RFE, f_regression
 from sklearn.impute import SimpleImputer
