@@ -4,11 +4,8 @@ local_path = '/Users/hinzlehome/codeup-data-science/binance-project/'
 sys.path.insert(0,local_path+'.env')
 from env import *
 
-
 # local-host
 import math, os, datetime, json, pprint, requests
-# having a weird time requests
-
 
 # python data science library's
 import numpy as np
